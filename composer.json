@@ -6,7 +6,7 @@
             "email": "david@raison.lu",
             "homepage": "http://david.raison.lu",
             "role": "Developer"
-        },
+        }
     ],
     "license": "GPL-3.0+",
     "keywords": ["Sphinx Search","serviceprovider", "search", "sphinx"],
