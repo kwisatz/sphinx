@@ -1,5 +1,6 @@
 {
     "name": "ttf/sphinx",
+    "version": "0.1.0",
     "authors": [
         {
             "name": "David Raison",
@@ -9,7 +10,7 @@
         }
     ],
     "license": "GPL-3.0+",
-    "keywords": ["Sphinx Search","serviceprovider", "search", "sphinx"],
+    "keywords": ["Sphinx Search", "serviceprovider", "search", "sphinx"],
     "require": {
         "php": ">=5.3.0",
         "neutron/sphinxsearch-api": "~2.0"
