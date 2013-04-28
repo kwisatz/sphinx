@@ -13,7 +13,6 @@ class SphinxAdapter {
     private $_cl;   // reference to the client object
     
     public  function __construct( $host, $port ){
-        print("huhu"); exit;
         $this->_cl = new \SphinxClient;
         $this->_cl->SetServer( $host, (int) $port );
         $this->_cl->SetMatchMode( SPH_MATCH_ANY );
