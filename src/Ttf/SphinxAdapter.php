@@ -29,17 +29,18 @@ class SphinxAdapter {
             return call_user_func_array( array( $this->_cl, $method ), $params);
         }
     }
-    
+
     /**
      *
      * @param type $query the query to perform on the catalog
      * @param type $catalog the catalog to search in
      * @return type array of results, false if none
+     * @throws \Exception
      */
     public function search( $query, $catalog ){
         $result = $this->_cl->Query( $query, $catalog );
         if( $result == false ) {
-            throw new Exception( "Sphinx client oops: " . $this->_cl->GetLastError());
+            throw new \Exception( "Sphinx client oops: " . $this->_cl->GetLastError());
         } else {
             if( !empty($result['warning']) ) {
                 return $this->_cl->GetLastWarning();
